@@ -1,0 +1,22 @@
+// @import url("");
+
+:root {
+  font-family: sans-serif;
+}
+
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-gray: hsl(0, 0%, 50%);
+
+// $color-primary: ;
+// $color-secondary: ;
+// $color-tertiary: ;
+
+$screen-sm: 525.008px;
+$screen-md: 768px;
+$screen-lg: 968px;
+$screen-xl: 1160px;
+$screen-grid: 1305.008px;
+
+$spacing-grid: 2.5rem;
+$max-width-grid: 1100px;
