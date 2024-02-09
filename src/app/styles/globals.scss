@@ -1,16 +1,21 @@
-// @import url("");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
 :root {
-  font-family: sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
 }
+
+$color-dark-blue: hsl(233, 26%, 24%);
+$color-lime-green: hsl(136, 65%, 51%);
+$color-bright-cyan: hsl(192, 70%, 51%);
+
+$color-grayish-blue: hsl(233, 8%, 62%);
+$color-light-grayish-blue: hsl(220, 16%, 96%);
+$color-very-light-gray: hsl(0, 0%, 98%);
 
 $color-white: hsl(0, 0%, 100%);
 $color-black: hsl(0, 0%, 0%);
 $color-gray: hsl(0, 0%, 50%);
-
-// $color-primary: ;
-// $color-secondary: ;
-// $color-tertiary: ;
 
 $screen-sm: 525.008px;
 $screen-md: 768px;
