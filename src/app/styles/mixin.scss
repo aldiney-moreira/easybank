@@ -25,3 +25,23 @@
     }
   }
 }
+
+@mixin hover-underline($width, $bottom) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -#{$bottom};
+    height: 0.35rem;
+    background: $gradient-primary;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover:after {
+    width: $width;
+  }
+}
