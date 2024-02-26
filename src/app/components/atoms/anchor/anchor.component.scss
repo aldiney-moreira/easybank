@@ -1,0 +1,30 @@
+@use "../../../styles/index.scss" as *;
+
+.anchor {
+  font-family: "Public Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+
+  &--primary {
+    font-weight: bold;
+    background: $gradient-primary;
+    color: $color-white;
+    padding: {
+      block: 1rem;
+      inline: 2.25rem;
+    }
+    border-radius: 2rem;
+
+    &:hover {
+      opacity: 50%;
+    }
+  }
+
+  &--secondary {
+    color: $color-grayish-blue;
+
+    @include for-size(screen-md) {
+      @include hover-underline($width: 100%, $bottom: 2.45rem);
+    }
+  }
+}
