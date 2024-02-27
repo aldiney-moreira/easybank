@@ -1,0 +1,98 @@
+@use "../../../styles/index.scss" as *;
+
+.header {
+  padding-block: 2.25rem;
+  height: 100%;
+  background-color: $color-white;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @include for-size(screen-md) {
+      flex-direction: row;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    padding: 1.75rem;
+    border-radius: 0.25rem;
+    gap: 1.25rem;
+    transition: all 0.3s ease-in-out;
+
+    @include for-size(screen-lg, $width: max) {
+      position: absolute;
+      top: -100vh;
+      flex-direction: column;
+      width: 100%;
+      z-index: -1;
+
+      &.active {
+        display: flex;
+        top: 3.5rem;
+      }
+    }
+  }
+
+  &__request {
+    display: block;
+
+    @include for-size(screen-lg, $width: max) {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.35rem;
+    height: 100%;
+
+    @include for-size(screen-lg) {
+      display: none;
+    }
+
+    &.active {
+      align-items: center;
+
+      & .header__bar:nth-child(1) {
+        transform: translateY(0.5rem) rotate(45deg);
+
+        @include for-size(screen-md) {
+          transform: translateY(0.5rem) rotate(45deg);
+        }
+      }
+
+      & .header__bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      & .header__bar:nth-child(3) {
+        transform: translateY(-0.4rem) rotate(-45deg);
+
+        @include for-size(screen-md) {
+          transform: translateY(-0.5rem) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__bar {
+    display: block;
+    width: 2rem;
+    height: 0.1rem;
+    border-radius: 0.031rem;
+    transition: all 0.3s ease-in-out;
+    background-color: $color-dark-blue;
+
+    @include for-size(screen-md) {
+      width: 2.5rem;
+      height: 0.15rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<header class="header container">
+  <nav class="header__nav">
+    <app-logo></app-logo>
+
+    <button class="header__hamburger" [ngClass]="{'active': isMenuOpen}" (click)="toggleMenu()">
+      <div class="header__bar"></div>
+      <div class="header__bar"></div>
+      <div class="header__bar"></div>
+    </button>
+
+    <ul class="header__menu" [ngClass]="{'active': isMenuOpen}">
+      <li><app-anchor text="Home" class="secondary" link="#"></app-anchor></li>
+      <li><app-anchor text="About" class="secondary" link="#"></app-anchor></li>
+      <li><app-anchor text="Contact" class="secondary" link="#"></app-anchor></li>
+      <li><app-anchor text="Blog" class="secondary" link="#"></app-anchor></li>
+      <li><app-anchor text="Careers" class="secondary" link="#"></app-anchor></li>
+    </ul>
+
+    <div class="header__request">
+      <app-anchor text="Request Invite" link="#"></app-anchor>
+    </div>
+  </nav>
+</header>
