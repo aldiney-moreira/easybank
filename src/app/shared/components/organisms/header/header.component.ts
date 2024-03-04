@@ -1,4 +1,4 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { LogoComponent } from '../../atoms/logo/logo.component';
 import { AnchorComponent } from '../../atoms/anchor/anchor.component';
 import { CommonModule } from '@angular/common';
