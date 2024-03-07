@@ -1,0 +1,9 @@
+@use "../../../../styles/index.scss" as *;
+
+.logo {
+  width: 8rem;
+
+  @include for-size(screen-md) {
+    width: 10rem;
+  }
+}
